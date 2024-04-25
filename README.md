@@ -116,6 +116,6 @@ id (integer): O identificador único da tarefa a ser excluída. <br/>
 **Formato de dados de resposta:** Tarefa excluída com sucesso. <br/>
 
 
-#Documentação Adicional
+# Documentação Adicional
 **Esquema de Banco de Dados:** O esquema do banco de dados utilizado para armazenar as tarefas pode ser encontrado no arquivo apirestphp.sql.
 **Coleção Postman:** Para facilitar o teste dos endpoints da API, uma coleção do Postman está disponível no arquivo API REST.postman_collection.json.
