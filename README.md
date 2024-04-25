@@ -1,5 +1,5 @@
 # Documentação da API de Gerenciamento de Lista de Tarefas
-A API permite a criação, leitura, atualização e exclusão de tarefas, além de autenticação de usuário através de tokens JWT.
+A API permite a criação, leitura, atualização e exclusão de tarefas, além de autenticação de usuário através de tokens JWT.<br/>
 
 -------------------------------------------------------------------------------------------
 # Modelagem do banco de dados(MySQL)
@@ -114,3 +114,8 @@ id (integer): O identificador único da tarefa a ser excluída. <br/>
   "id": 1
 }`<br/><br/>
 **Formato de dados de resposta:** Tarefa excluída com sucesso. <br/>
+
+
+#Documentação Adicional
+**Esquema de Banco de Dados:** O esquema do banco de dados utilizado para armazenar as tarefas pode ser encontrado no arquivo apirestphp.sql.
+**Coleção Postman:** Para facilitar o teste dos endpoints da API, uma coleção do Postman está disponível no arquivo API REST.postman_collection.json.
