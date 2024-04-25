@@ -1,0 +1,262 @@
+{
+	"info": {
+		"_postman_id": "d0884729-f02a-408b-b1e5-9ced66a4a0e0",
+		"name": "API REST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5182474"
+	},
+	"item": [
+		{
+			"name": "Teste Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"teste2\",\r\n    \"password\": \"teste123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/apirestphp/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"apirestphp",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Teste Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"teste2\",\r\n    \"password\": \"teste123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/apirestphp/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"apirestphp",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Teste tarefa Create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJ1c2VybmFtZSI6InRlc3RlMiIsImV4cCI6MTcxNDA4MTMzM30.n8EvvOERZEFpvMt_isLrIovT700zBYT_7-8RYnu0e2w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Minha nova tarefwa\",\r\n    \"description\": \"Esta é a descrição da minha nova tarefa.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/apirestphp/tasks-create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"apirestphp",
+						"tasks-create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Teste tarefa Update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJ1c2VybmFtZSI6InRlc3RlMiIsImV4cCI6MTcxNDA4MTMzM30.n8EvvOERZEFpvMt_isLrIovT700zBYT_7-8RYnu0e2w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 37,\r\n    \"title\": \"Novo rererer\",\r\n    \"description\": \"Nova descrição da tarefa\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/apirestphp/tasks-update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"apirestphp",
+						"tasks-update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Teste tarefa Get All",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJ1c2VybmFtZSI6InRlc3RlMiIsImV4cCI6MTcxNDA4Mjc5N30.YKFPRweDhNBCSBauc3-KY_3LOWFqZaU-XXe9qtFvYYg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/apirestphp/tasks-read",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"apirestphp",
+						"tasks-read"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Teste tarefa Delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJ1c2VybmFtZSI6InRlc3RlMiIsImV4cCI6MTcxNDA4MTMzM30.n8EvvOERZEFpvMt_isLrIovT700zBYT_7-8RYnu0e2w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 39\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/apirestphp/tasks-delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"apirestphp",
+						"tasks-delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Teste tarefa Get by ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJ1c2VybmFtZSI6InRlc3RlMiIsImV4cCI6MTcxNDA4Mjc5N30.YKFPRweDhNBCSBauc3-KY_3LOWFqZaU-XXe9qtFvYYg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 37\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/apirestphp/tasks-readid",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"apirestphp",
+						"tasks-readid"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

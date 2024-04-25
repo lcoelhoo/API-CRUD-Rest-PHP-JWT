@@ -1,0 +1,19 @@
+{
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "require": {
+        "firebase/php-jwt": "^6.10",
+        "vlucas/phpdotenv": "^5.3"
+    },
+    "config": {
+        "preferred-install": {
+            "*": "source"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Controller\\": "src/Controller",
+            "Util\\": "src/Util"
+        }
+    }
+}
