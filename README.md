@@ -1,6 +1,6 @@
 # Documentação da API de Gerenciamento de Lista de Tarefas
-A API permite a criação, leitura, atualização e exclusão de tarefas, além de autenticação de usuário através de tokens JWT.<br/>
-**Esquema de Banco de Dados:** O esquema do banco de dados utilizado para armazenar as tarefas pode ser encontrado no arquivo apirestphp.sql.<br/>
+A API permite a criação, leitura, atualização e exclusão de tarefas, além de autenticação de usuário através de tokens JWT.<br/><br/>
+**Esquema de Banco de Dados:** O esquema do banco de dados utilizado para armazenar as tarefas pode ser encontrado no arquivo apirestphp.sql.<br/><br/>
 **Coleção Postman:** Para facilitar o teste dos endpoints da API, uma coleção do Postman está disponível no arquivo API REST.postman_collection.json.<br/>
 
 -------------------------------------------------------------------------------------------
